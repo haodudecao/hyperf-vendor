@@ -1,5 +1,5 @@
 {
-    "name": "smallsung/hyperf",
+    "name": "haodudecao/hyperf",
     "description": "this is a composer vendor",
     "type": "project",
     "require": {
