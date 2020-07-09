@@ -1,0 +1,56 @@
+{
+  "name": "smallsung/hyperf",
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-swoole": ">=4.4",
+    "ext-json": "*",
+    "ext-redis": "*",
+    "hyperf/di": "^1.1",
+    "hyperf/utils": "^1.1",
+    "hyperf/translation": "^1.1",
+    "hyperf/exception-handler": "^1.1",
+    "hyperf/http-server": "^1.1",
+    "hyperf/snowflake": "^1.1",
+    "hyperf/logger": "^1.1",
+    "hyperf/websocket-server": "^1.1",
+    "hyperf/validation": "^1.1",
+    "opis/closure": "^3.5.1",
+    "bramus/monolog-colored-line-formatter": "~2.0",
+    "lcobucci/jwt": "^3.3",
+    "swiftmailer/swiftmailer": "^6.0",
+    "hyperf/db-connection": "^1.1"
+  },
+  "require-dev": {
+    "swoft/swoole-ide-helper": ">=4.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmallSung\\Hyperf\\": "src/",
+      "SmallSung\\Hyperf\\Exception\\": "src/exception/",
+      "SmallSung\\Hyperf\\App\\": "src/app/",
+      "SmallSung\\Hyperf\\Core\\": "src/core/",
+      "SmallSung\\Hyperf\\Utils\\": "src/utils/",
+      "SmallSung\\Hyperf\\Logger\\": "src/logger/",
+      "SmallSung\\Hyperf\\Task\\": "src/task/",
+      "SmallSung\\Hyperf\\Server\\": "src/server/",
+      "SmallSung\\Hyperf\\Controller\\": "src/controller/",
+      "SmallSung\\Hyperf\\Response\\Exception\\": "src/response-exception/",
+      "SmallSung\\Hyperf\\Push\\Exception\\": "src/push-exception/"
+    },
+    "files": [
+      "src/utils/functions.php",
+      "src/app/functions.php"
+    ]
+  },
+  "extra": {
+    "hyperf": {
+      "config": "SmallSung\\Hyperf\\ConfigProvider"
+    }
+  }
+}
