@@ -4,10 +4,10 @@
     "type": "project",
     "require": {
         "php": "^7.4",
-        "ext-swoole": "4.4"
+        "ext-swoole": "^4.4"
     },
     "require-dev": {
-        "swoft/swoole-ide-helper": "4.4"
+        "swoft/swoole-ide-helper": "^4.4"
     },
     "license": "MIT",
     "authors": [
